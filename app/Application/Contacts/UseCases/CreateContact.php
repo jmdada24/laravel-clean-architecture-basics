@@ -10,10 +10,13 @@ use App\Domain\Contacts\ValueObjects\Name;
 
 
 final class CreateContact{
+
+    
     public function __construct(private ContactRepository $contacts)
-    {
+    {   
     
     }
+
 
     public function execute(ContactData $data): Contact{
         $name = new Name($data->firstName, $data->lastName);

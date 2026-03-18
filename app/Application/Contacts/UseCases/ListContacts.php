@@ -10,6 +10,7 @@ final class ListContacts{
 
     }
 
+    
     public function execute():array{
         return $this->contacts->all();
 

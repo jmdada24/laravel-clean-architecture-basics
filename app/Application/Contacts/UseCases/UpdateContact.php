@@ -27,8 +27,7 @@ final class UpdateContact{
 
         }
         
-        
-
+    
         $contact->rename(new Name($data->firstName, $data->lastName));
         $contact->changeNumber(new ContactNumber($data->contactNumber));
 

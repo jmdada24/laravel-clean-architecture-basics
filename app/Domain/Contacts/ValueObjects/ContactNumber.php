@@ -6,9 +6,9 @@ final class ContactNumber{
 
     public function __construct(private string $value)
     {
-        $this->value = trim($this->$value);
+        $this->value = trim($this->value);
 
-        if($this->$value === ''){
+        if($this->value === ''){
             throw new \InvalidArgumentException('Contact number is required');
         }
 

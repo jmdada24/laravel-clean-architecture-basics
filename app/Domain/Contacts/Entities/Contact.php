@@ -34,10 +34,17 @@ final class Contact{
 
     }
 
-    public function contact(): ContactNumber{
+    public function contactNumber(): ContactNumber{
         return $this->contactNumber;
 
     }
+    
+    public function withId(ContactId $id): self{
+
+    return new self($id, $this->name, $this->contactNumber);
+    
+    }
+
 
     public function rename(Name $name): void{
         $this->name = $name;

@@ -11,6 +11,7 @@ final class DeleteContact{
         
     }
 
+    
     public function execute(int $id): void{
         
         $this->contacts->delete(new ContactId($id));
